@@ -18,3 +18,7 @@ const Route = use('Route')
 Route.get('/', ({ request }) => {
   return { greeting: 'Hello world in JSON' }
 })
+
+// Rotas de curso //
+Route.resource('cursos', 'CursoController')
+  .apiOnly()
